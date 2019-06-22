@@ -10,7 +10,7 @@
     "color-shorthand": false,
     "element-case": "lower",
     "eof-newline": true,
-    "leading-zero": false,
+    "leading-zero": true,
     "quotes": "single",
     "remove-empty-rulesets": false,
     "space-after-colon": " ",
@@ -27,14 +27,18 @@
     "vendor-prefix-align": true,
     "sort-order": [
         [
+            "$variable",
+            "$include",
+            "$extend",
+            "$import"
+        ],
+        [
             "position",
             "z-index",
             "top",
             "right",
             "bottom",
-            "left"
-        ],
-        [
+            "left",
             "display",
             "visibility",
             "float",
@@ -94,9 +98,7 @@
             "-webkit-order",
             "-moz-box-ordinal-group",
             "-ms-flex-order",
-            "order"
-        ],
-        [
+            "order",
             "-webkit-box-sizing",
             "-moz-box-sizing",
             "box-sizing",
@@ -116,8 +118,6 @@
             "padding-right",
             "padding-bottom",
             "padding-left"
-        ],
-        [
             "table-layout",
             "empty-cells",
             "caption-side",
